@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 st.title('Euler’s Method Approximate')
 st.subheader('Use the Euler’s to approximate the solutions to the initial-value problems')
-st.latex(r"y' = \frac{y}{t} + \frac{y^2}{t^2} , \quad 1 \le t \le 2, \quad y(1) = 1 with h = ?")
+st.latex(r"y' = \frac{y}{t} + \frac{y^2}{t^2} , \quad 1 \le t \le 2, \quad y(1) = 1")
 st.subheader('Exact solution is :')
 st.latex(r"y(t) = \frac{t}{1 + \ln(t)}")
 def f(x):
