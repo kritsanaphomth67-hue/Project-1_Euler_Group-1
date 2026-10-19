@@ -2,12 +2,12 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 st.title('Euler’s Method Approximate')
---------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------
 st.sidebar.header("การตั้งค่าพารามิเตอร์ (Input)")
 h = st.sidebar.number_input("1. กำหนดขนาดก้าว (Step size: h)", min_value=0.001, max_value=0.5, value=0.1, step=0.01, format="%.4f")
 precision = st.sidebar.slider("2. จำนวนตำแหน่งทศนิยมในตาราง (Precision)", min_value=2, max_value=8, value=7)
 plt_style = st.sidebar.selectbox("3. เลือกรูปแบบสไตล์กราฟ (Plot Style)",["default", "ggplot", "bmh", "fivethirtyeight"])
---------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------
 def f(t, y):
     return (y/t) - (y/t)**2
 def y(t):
@@ -26,7 +26,7 @@ euler_values = np.array(euler_values)
 exact_values = y(t_values)
 errors = np.abs(exact_values - euler_values)
 df = pd.DataFrame({"t_i": t_values, "Euler's": euler_values, "Exact": exact_values, "Error": errors})
-----------------------------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------------------
 tab1 ,tab2, tab3 = st.tabs(["ทฤษฎี (Theory)", "ตัวจำลองและกราฟ (Simulation & Chart)", "ตารางสรุปผล (Results Table)"])
 with tab1:
     st.subheader('Use the Euler’s to approximate the solutions to the initial-value problems')
