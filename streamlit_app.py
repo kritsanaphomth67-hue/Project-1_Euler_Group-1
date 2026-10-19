@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 st.title('Euler’s Method Approximate')
+st.latex(r''y' = frac{y}{t} + frac{y^2}{t^2}'')
 def f(x):
     return x**3+4*x**2+x-1
 def df(x):
