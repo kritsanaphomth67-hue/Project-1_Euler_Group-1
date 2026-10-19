@@ -53,7 +53,7 @@ with tab2:
     ax.grid(True, linestyle="--", alpha=0.6)
     st.pyplot(fig)
 
-with tabs3:
+with tab3:
     st.subheader(f"ตารางเปรียบเทียบค่าที่คำนวณได้ (h = {h})")
     df_display = df.copy()
     df_display["t_i"] = df_display["t_i"].map(lambda x: f"{x:.2f}")
