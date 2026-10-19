@@ -35,7 +35,6 @@ with tab1:
     st.latex(r"y(t) = \frac{t}{1 + \ln(t)}")
 
 with tab2:
-    with tab2:
     st.subheader("เปรียบเทียบ Exact Solution และ Numerical Solution")
     m1, m2, m3 = st.columns(3)
     m1.metric("ค่า Step Size (h)", f"{h}")
