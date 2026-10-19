@@ -60,3 +60,4 @@ with tab3:
     df_display["Euler's"] = df_display["Euler's"].map(lambda x: f"{x:.{precision}f}")
     df_display["Exact"] = df_display["Exact"].map(lambda x: f"{x:.{precision}f}")
     df_display["Error"] = df_display["Error"].map(lambda x: f"{x:.{precision}f}")
+    st.dataframe(df_display, use_container_width=True)
