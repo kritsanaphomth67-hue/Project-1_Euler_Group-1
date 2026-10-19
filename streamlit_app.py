@@ -28,7 +28,7 @@ exact_values = y(t_values)
 errors = np.abs(exact_values - euler_values)
 df = pd.DataFrame({"t_i": t_values, "Euler's": euler_values, "Exact": exact_values, "Error": errors})
 #----------------------------------------------------------------------------------------------------------------------
-tab1 ,tab2, tab3 = st.tabs(["ทฤษฎี (Theory)", "ตัวจำลองและกราฟ (Simulation & Chart)", "ตารางสรุปผล (Results Table)"])
+tab1 ,tab2, tab3 = st.tabs(["โจทย์", "ตัวจำลองและกราฟ", "ตารางสรุปผล"])
 with tab1:
     st.subheader('Use the Euler’s to approximate the solutions to the initial-value problems')
     st.latex(r"y' = \frac{y}{t} - \frac{y^2}{t^2} , \quad 1 \le t \le 2, \quad y(1) = 1")
