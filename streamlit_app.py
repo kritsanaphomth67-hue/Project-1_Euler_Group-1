@@ -1,6 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 st.title('Euler’s Method Approximate')
 #--------------------------------------------------------------------------------------------------------------------
 st.sidebar.header("การตั้งค่าพารามิเตอร์ (Input)")
